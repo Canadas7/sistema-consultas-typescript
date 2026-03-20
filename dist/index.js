@@ -10,3 +10,13 @@ function listarConsultasFuturas(consultas: Consulta[]): Consulta[] {
   hoje.setHours(0, 0, 0, 0); // Zera horas para comparar apenas a data
   return consultas.filter((consulta) => consulta.data >= hoje);
 }
+
+// Consulta 1 - Agendada
+const consulta1 = criarConsulta(
+  1,
+  medico1,
+  paciente1,
+  new Date(2026, 1, 28), // 28/02/2026
+  350
+);
+
